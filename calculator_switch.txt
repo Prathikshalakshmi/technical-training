@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    double op1, op2, result;
+    char opr;
+    //Getting an expression
+    scanf("%lf %c %lf",&op1 ,&opr, &op2);
+    switch(opr)
+    {
+        case '+': result = op1 + op2;
+                break;
+        case '-': result = op1 - op2;
+                break;
+        case '*': case 'x': case 'X':
+                result = op1 * op2;
+                break; 
+        case '/': result = op1 / op2;
+                break;
+        case '%': result =fmod(op1, op2);
+                break;        
+        default: 
+                printf("Invalid Operator!");
+                break;
+    }
+    printf("%g %c %g = %g",op1, opr, op2, result);
+    return 0;
+}
