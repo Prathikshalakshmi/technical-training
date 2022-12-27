@@ -1,0 +1,13 @@
+//Program to check whether the given number is multiples of 5 or not
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+  int x;
+  scanf("%d", &x);
+  
+  printf(x%5==0 ? "Multiple of 5": "not Multiple of 5");
+  
+    return 0; 
+}
+ 
