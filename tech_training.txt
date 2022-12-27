@@ -76,7 +76,6 @@ int main()
 
 //Bill Calculator
 #include <stdio.h>
-
 int main()
 {
    char product_name[20];
