@@ -1,0 +1,28 @@
+//to reverse array elements
+#include <stdio.h>
+int main()
+{
+    int size,t=0;
+    scanf("%d", &size);
+    
+    int arr[size]; 
+    for(int i=0; i<size; i++)
+      scanf("%d", &arr[i]);
+ 
+    for(int i=0 , j= size-1; i<=size/2;i++, j--)
+    {
+        t=arr[i];
+        arr[i]= arr[j];
+        arr[j]=t;
+    }
+    
+    //printing array elements
+    for(int i=0; i<size; i++)
+      printf("%d ", arr[i]);
+     
+    return 0;
+}
+output:
+5
+1 2 3 4 5
+5 4 3 2 1 
