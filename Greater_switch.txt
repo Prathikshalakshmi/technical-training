@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main{
+   int x=10, y=20;
+   switch(x>y){
+        case 1: printf("%d is greater", x);
+		break;
+	default: printf("%d is greater", y); 
+    }
+   return 0;
+}

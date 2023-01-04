@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+   int arr[] = {7,10,20,3,11,9};
+   //finding the array size
+   int size = sizeof(arr)/sizeof(arr[0]);
+   //implimenting selection sort algorithm
+   for(int i=0; i<size; i++){
+       int min_index= i;
+       //finding index of minimum value from the subarray
+       for(int j=i+1; j<size; j++)
+            if(arr[min_index]>arr[j])
+                min_index = j;
+        //Checking whether min value is there in the subarray        
+        if(min_index != i){
+            //Swapping min value with ith value
+            int temp = arr[i];
+            arr[i] = arr[min_index];
+            arr[min_index] = temp;
+        }
+   }
+   //printing sorted array elements
+   for(int i=0;i<size; i++)
+        printf("%d ",arr[i]);
+   return 0;
+}

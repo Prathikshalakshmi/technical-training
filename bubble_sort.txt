@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+   int arr[] = {10,290,7,12,19,3};
+   int size = sizeof(arr)/sizeof(arr[0]);
+   //implementing bubble sort algorithm
+   //nuber of element to be sorted
+   for(int i=1; i<=size-1; i++)
+       //number of elements to be compared with 
+       for(int j=0; j<size-i; j++)
+           //comparing adjacent values
+           if(arr[j]>arr[j+1])
+               //swapping adjacent values if first one is greater than second
+               arr[j]= arr[j] + arr[j+1] - (arr[j+1] = arr[j]);
+       
+   //printing the sorted elements
+   for(int index=0; index<size; index++)
+        printf("%d ", arr[index]);
+   
+    return 0;
+}
