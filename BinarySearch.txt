@@ -1,0 +1,23 @@
+//program to search an element in an array using binary search
+#include <stdio.h>
+#include<stdlib.h>
+int main(){
+    int arr[]={10,20,30,40,50,66,77}, search_element;
+    int size = sizeof(arr)/sizeof(arr[0]);
+   //getting search element from the user
+   scanf("%d", &search_element);
+   for(int lb=0, ub=size-1; lb<=ub;){
+       int mid=(lb+ub)/2;
+       if(arr[mid] == search_element){
+           printf("Found @ %d", mid);
+           exit(0);
+       }
+       else if(arr[mid]< search_element)
+             lb = mid+1;
+        else
+            ub=mid-1;
+   }
+   printf("Not Found");
+    
+    return 0;
+}
