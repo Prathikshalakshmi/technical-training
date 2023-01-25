@@ -1,0 +1,161 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    int len =strlen(str);
+   for( int i= len; i>=1; i--)
+        printf("%-*.*s\n",len,i,str);
+    for( int i= 1; i<=len; i++)
+        printf("%-*.*s\n",len,i,str);
+    return 0;
+}
+
+Prathiksha
+Prathiksha
+Prathiksh 
+Prathiks  
+Prathik   
+Prathi    
+Prath     
+Prat      
+Pra       
+Pr        
+P         
+P         
+Pr        
+Pra       
+Prat      
+Prath     
+Prathi    
+Prathik   
+Prathiks  
+Prathiksh 
+Prathiksha
+-----------------------------------------------
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    int len =strlen(str);
+   for( int i= len; i>=1; i--)
+        printf("%-*.*s%*.*s\n",len,i,str,len,i,str);
+
+    return 0;
+}
+
+prathiksha
+prathikshaprathiksha
+prathiksh  prathiksh
+prathiks    prathiks
+prathik      prathik
+prathi        prathi
+prath          prath
+prat            prat
+pra              pra
+pr                pr
+p                  p
+
+----------------------------------------------
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    int len =strlen(str);
+   for( int i= len; i>=1; i--)
+        printf("%-*.*s%*.*s\n",len,i,str,len,i,str);
+        for( int i= 1; i<=len; i++)
+        printf("%-*.*s%*.*s\n",len,i,str,len,i,str);
+
+
+    return 0;
+}
+
+prathik
+prathikprathik
+prathi  prathi
+prath    prath
+prat      prat
+pra        pra
+pr          pr
+p            p
+p            p
+pr          pr
+pra        pra
+prat      prat
+prath    prath
+prathi  prathi
+prathikprathik
+
+--------------------------------------------------
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    int len =strlen(str);
+      for( int i= 1; i<=len; i++)
+        printf("%*.*s%-*.*s\n",len,i,str,len,i,str);
+       
+     for( int i= len; i>=1; i--)
+        printf("%*.*s%-*.*s\n",len,i,str,len,i,str);
+       
+    return 0;
+}
+
+Prathik  
+      PP      
+     PrPr     
+    PraPra    
+   PratPrat   
+  PrathPrath  
+ PrathiPrathi 
+PrathikPrathik
+PrathikPrathik
+ PrathiPrathi 
+  PrathPrath  
+   PratPrat   
+    PraPra    
+     PrPr     
+      PP 
+-----------------------------------------------
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    int len =strlen(str);
+     for( int i= 1; i<=len; i++)
+        printf("%-*.*s%*.*s\n",len,i,str,len,i,str);
+        
+        for( int i= len; i>=1; i--)
+        printf("%-*.*s%*.*s\n",len,i,str,len,i,str);
+
+       
+    return 0;
+}
+
+prathik
+p            p
+pr          pr
+pra        pra
+prat      prat
+prath    prath
+prathi  prathi
+prathikprathik
+prathikprathik
+prathi  prathi
+prath    prath
+prat      prat
+pra        pra
+pr          pr
+p            p
+
+-----------------------------------------------------

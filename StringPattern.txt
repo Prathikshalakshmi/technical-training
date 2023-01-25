@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    int len;
+    scanf("%s%n",str,&len);
+   for( int i= len; i>=1; i--)
+        printf("%-*.*s\n",len,i,str);
+    return 0;
+}
+
+output:
+Prathiksha
+Prathiksha
+Prathiksh 
+Prathiks  
+Prathik   
+Prathi    
+Prath     
+Prat      
+Pra       
+Pr        
+P   
+
+--------------------------------------------------------
+//Program to print V pattern
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    int len, i;
+    scanf("%s%n",str,&len);
+    for(i= 1; i<len; i++)
+        printf("%*c%*s%c\n",i,str[i-1],(len*2-(i*2+1)),"",str[i-1]); 
+    printf("%*c\n",i, str[i-1]);    
+    return 0;
+}
+
+pratik 
+ p         p
+  r       r
+   a     a
+    t   t
+     i i
+      k
+
+------------------------------------------------------------
+//Program to print X pattern
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    int len, i;
+    scanf("%s%n",str,&len);
+    for(i= 1; i<len; i++)
+        printf("%*c%*s%c\n",i,str[i-1],(len*2-(i*2+1)),"",str[i-1]); 
+    printf("%*c\n",i, str[i-1]); 
+    for(i= len-1; i>=1; i--)
+        printf("%*c%*s%c\n",i,str[i-1],(len*2-(i*2+1)),"",str[i-1]);
+    return 0;
+}
+
+Prathik
+P           P
+ r         r
+  a       a
+   t     t
+    h   h
+     i i
+      k
+     i i
+    h   h
+   t     t
+  a       a
+ r         r
+P           P
