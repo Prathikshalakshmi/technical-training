@@ -1,0 +1,74 @@
+Why Pointer?
+*Executes fatser.
+*Creates dynamic array.
+*Implements call by reference.
+*returns multiple values at a time.
+
+Operators
+&  Address operator
+*  Indirection or derefencing or value
+-> structure pointer member accessing operator.
+
+%p - to print the pointer type data
+
+#include <stdio.h>
+int main()
+{
+    int x=10;
+    int *ptr;
+    ptr=&x;
+    *ptr = 200;
+    x++;
+    printf("%d\t", x);
+    printf("%d\t", *(&x));
+    printf("%d\t", *ptr);
+    printf("\n%p\t", &x);
+    printf("%p\t", ptr);
+    printf("%p\t", &ptr);
+    return 0;
+}
+201     201     201
+0x7fff378d8b0c  0x7fff378d8b0c  0x7fff378d8b10
+
+
+Arrays & Pointers:
+
+#include <stdio.h>
+int main()
+{
+    char str[50] ="Prathiksha";
+    char *ptr;
+    ptr = str;
+    printf("%c ", *(ptr+2));
+    ptr = str+2;
+    printf("%c ", *ptr);
+    printf("%c ", *(ptr-2));
+    
+    return 0;
+}
+a a P
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[] ="Prathik";
+    char *ptr;
+    ptr = str+3;
+    printf("%c\n", ptr[-3]);
+    printf("%c\n", ptr[3]);
+       return 0;
+}
+P
+k
+
+Dynamic Memory Allocation(DMA)
+ stdlib.h
+//Allocates memory dynamically
+malloc()
+calloc()
+
+//realocates memory which allocated already(increase or decrease the memory which is allocated already)
+realloc()
+
+//reallocates memory which allocated already(increase or decrease the memory which is allocated
