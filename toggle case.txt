@@ -1,0 +1,23 @@
+//Program to convert a string into toggle case using pointer
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100],*ptr;
+    ptr = str;
+    scanf("%[^\n]s", str);
+    while(*ptr){
+        if(*ptr >= 'A' && *ptr <='Z')
+            *ptr =*ptr + 32;
+        else if(*ptr >= 'a' && *ptr <='z')    
+            *ptr =*ptr - 32;
+            ptr++;
+    }
+   puts(str);
+    
+    return 0;
+}
+
+
+PrAthIKK@Is30
+pRaTHikk@iS30
