@@ -4,6 +4,7 @@
 
 int main()
 {
+    //function proto-type
     double *calc(double, double, char);
     double *result = calc(10.5, 0, '/');
     if( result !=NULL)
@@ -14,6 +15,7 @@ int main()
     return 0;
 }
 
+//function to implementsimple calculator
 double* calc(double num1, double num2, char opr){
     double *result = (double*)malloc(sizeof(double));
     switch(opr){
