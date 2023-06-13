@@ -1,0 +1,62 @@
+function definition syntax:
+ <return_type> <function_name> (<parameter_list>){
+	<function_body>
+	 return <return_value>;
+}
+
+----------------------------------------------------------------------------------------
+
+#include <stdio.h>
+//function definition
+void greet(char username[], char gender){
+    char *title;
+    if(gender == 'F')
+       title= "Ms.";
+    else{
+        title="Mr.";
+    }   
+    printf("Good afternoon %s%s!\n", title,username);
+    printf("Enjoy learning!\n");
+}
+int main()
+{
+    char names[][20] = {"Vamshi", "Saman", "Ananya", "Sachin", "Aditi", "Ashlesh", "Sudeeksha", "Deon","Deeksha"};
+    char genders[]= "FMFMFMFMF";
+    int len = sizeof(names)/20;
+    for(int i=0; i<len; i++)
+        greet(names[i], genders[i]);
+    printf("This is demo of function");
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------
+#include<stdio.h>
+void greet(char username[], char gender){
+    static int x=1;
+    char *title, *greet_message;
+    if(gender == 'F')
+       title= "Ms.";
+    else{
+        title="Mr.";
+    }
+    if(x%2 ==1){
+        greet_message ="Morning";
+    }
+    else{
+        greet_message="Afternoon";
+    }
+    printf("Good %s %s%s!\n",greet_message, title,username);
+    printf("Enjoy learning!\n");
+    x++;
+}
+int main()
+{
+    char names[][20] = {"Vamshi", "Saman", "Ananya", "Sachin", "Aditi", "Ashlesh", "Sudeeksha", "Deon","Deeksha"};
+    char genders[]= "FMFMFMFMF";
+    int len = sizeof(names)/20;
+    for(int i=0; i<len; i++)
+        greet(names[i], genders[i]);
+    printf("This is demo of function");
+    return 0;
+}
