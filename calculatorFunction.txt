@@ -1,35 +1,37 @@
-#include<math.h>
-#include <stdio.h>
 #include<stdlib.h>
+#include <math.h>
+#include <stdio.h>
+double *calculate(int a, char symb, int b){
+    double *result;
+    result=(double*)malloc(sizeof(double));
+    switch(symb){
+        case '+': *result=a+b;
+                  break; 
+        case '-': *result=a-b;
+                  break;  
+        case '*': case 'x': case 'X': *result=a*b;
+                  break;
+        case '/': *result=a/b;
+                  break;  
+        case '%': *result=fmod(a,b);
+                  break; 
+        default: return NULL;          
+            }
+        return result;     
+     
+}
 
 int main()
 {
-    //function proto-type
-    double *calc(double, double, char);
-    double *result = calc(10.5, 0, '/');
-    if( result !=NULL)
-       printf("%lf", *result);
+    double x, y, *z;
+    char opr;
+    scanf("%lf %c %lf",&x,&opr, &y);
+    z = calculate(x,opr,y);
+    if(z == NULL)
+      printf("Invalid Operation!");
     else
-        printf("Invalid operation/Denominator should not be zero");
-
+      printf("%g", *z);
+    
     return 0;
 }
 
-//function to implementsimple calculator
-double* calc(double num1, double num2, char opr){
-    double *result = (double*)malloc(sizeof(double));
-    switch(opr){
-        case '+': *result = (num1 + num2); break;
-        case '-': *result = (num1 - num2); break;
-        case '*': case 'x': case 'X': *result = (num1 * num2); break;
-        case '/': 
-                if(num2 != 0)
-                    *result = (num1 / num2);
-                else 
-                    return NULL;
-                break;
-        case '%': *result = fmod(num1, num2); break; 
-        default: return NULL;
-    }
-    return result;
-}

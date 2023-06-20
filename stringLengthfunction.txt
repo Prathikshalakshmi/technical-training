@@ -1,0 +1,17 @@
+#include <stdio.h>
+unsigned long length(const char *str){
+    unsigned long len;
+    for(len=0; str[len]; len++);
+
+return len;
+}
+
+int main()
+{
+
+    char str[100];
+    scanf("%[^\n]s", str);
+    printf("%lu",length(str));
+
+    return 0;
+}
