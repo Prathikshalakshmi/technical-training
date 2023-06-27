@@ -1,0 +1,21 @@
+//Program to print reverse natural number from 1 to N using recursion
+#include <stdio.h>
+
+void print(int n){
+    if(n<1) //base case
+        return;
+    else{
+         printf("%d ",n);
+        print(n-1);
+       
+    }
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    print(n);
+
+    return 0;
+}
