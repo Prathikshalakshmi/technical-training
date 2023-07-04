@@ -1,0 +1,28 @@
+//Program to display to content of file
+#include <stdio.h>
+int main()
+{
+    FILE* fptr;
+    char filename[30];
+    printf("Enter file name : ");
+    scanf("%s", filename);
+    //opening the file <filename> for reading purpose
+    fptr = fopen(filename, "r");
+    //checking whether the file <filename> does not exist
+    if (fptr == NULL){
+        printf("%s does not exist!", filename);
+        return 0; //terminates the application
+    }
+    //file exist
+    while(1){
+        //reading a character from the file pointer
+        char ch = fgetc(fptr);
+        //checking whether the file pointer reached the end of file
+        if(ch == EOF) break;
+        //printing the read character on the screen
+        printf("%c", ch);
+    }
+    //closing the file pointer
+    fclose(fptr);
+    return 0;
+}

@@ -1,0 +1,29 @@
+//Program to write content into file
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    FILE *fptr;
+    char filename[30];
+    printf("Enter file name : ");
+    scanf("%s", filename);
+    //opening the file <filename> for writting purpose
+    fptr = fopen(filename, "w");
+    //checking whether the file does not create
+    if(fptr == NULL){
+        printf("%s does not create!", filename);
+        exit(0); //treminates the application
+    }
+    //file created
+    printf("Enter text here....... Press Q to quit\n");
+    while(1){
+        //getting a character from the standard input device
+        char ch = getc(stdin);
+        if(ch == 'Q') break;
+        //writing the character into file pointer
+        fputc(ch, fptr);
+    }
+    //closing the file pointer 
+    fclose(fptr);
+    return 0;
+}

@@ -1,0 +1,28 @@
+//File handling function
+
+fopen():
+	FILE* fopen(const char* filename, const char* mode);
+	Possible characters for mode: r,w,a,r+, w+, a+
+	t-> text mode, b->binary mode
+ 
+fclose():
+	int fclose(FILE *filepointer);
+	
+fputc():
+	int fputc(int ch, FILE *filepointer);
+
+fgetc():
+	int fgetc(FILE *filepointer)
+
+fputs():
+	int fputs(const char *str, FILE *stream)
+fgets():
+
+fprintf()
+fscanf()
+fwrite()
+fread()
+ftell()
+fseek()
+rewind()
+feof()
