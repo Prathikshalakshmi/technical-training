@@ -17,7 +17,7 @@ int main()
   
   return 0;
 }
-Output: 
+
  
 
 
@@ -181,8 +181,8 @@ int main()
   return 0;
   
 }
-     
 
+/*
 switch(<expression>){
 case<value1>:
 		<statements>
@@ -190,7 +190,7 @@ case<value1>:
 case<value1> ... <valueN>:
 	break;
 }
-
+*/
 
 #include <stdio.h>
 int main()
@@ -341,12 +341,14 @@ int main()
         printf("\n");
     }
 }
-
+/*
 Prathiksha 
 Prathiksha Prathiksha 
 Prathiksha Prathiksha Prathiksha 
 Prathiksha Prathiksha Prathiksha Prathiksha 
 Prathiksha Prathiksha Prathiksha Prathiksha Prathiksha
+*/
+
 
 #include <stdio.h>
 int main()
@@ -363,6 +365,7 @@ int main()
 
     return 0;
 }
+/*
 output:
 5
 12345
@@ -370,7 +373,7 @@ output:
 12345
 12345
 12345
-
+*/
 
 #include <stdio.h>
 int main()
@@ -387,6 +390,8 @@ int main()
 
     return 0;
 }
+
+/*
 output:
 9
 1
@@ -398,7 +403,7 @@ output:
 1234567
 12345678
 123456789
-
+*/
 
 
 #include <stdio.h>
@@ -416,6 +421,7 @@ int main()
 
     return 0;
 }
+/*
 output:
 5
 12345
@@ -423,6 +429,9 @@ output:
 123
 12
 1
+*/
+
+
 
 #include <stdio.h>
 int main()
@@ -441,6 +450,7 @@ int main()
    }
     return 0;
 }
+/*
 output:
 5
 54321
@@ -448,6 +458,8 @@ output:
   321
    21
     1
+*/
+
 
 #include <stdio.h>
 int main()
@@ -470,12 +482,16 @@ int main()
 
     return 0;
 }
+/*
 5
 1234554321
 1234  4321
 123    321
 12      21
 1        1
+*/
+
+
 
 #include <stdio.h>
 int main()
@@ -498,6 +514,7 @@ int main()
 
     return 0;
 }
+/*
 8
 ABCDEFGHHGFEDCBA
 ABCDEFG  GFEDCBA
@@ -507,7 +524,7 @@ ABCD        DCBA
 ABC          CBA
 AB            BA
 A              A
-
+*/
 
 #include <stdio.h>
 int main()
@@ -542,6 +559,8 @@ for(r=1;r<=n;r++)
    }
     return 0;
 }
+
+/*
 5
 **********
 ****  ****
@@ -553,7 +572,7 @@ for(r=1;r<=n;r++)
 ***    ***
 ****  ****
 **********
-
+*/
 
 
 
@@ -572,12 +591,16 @@ int main()
 
     return 0;
 }
+
+/*
 5
     *
    ***
   *****
  *******
 *********
+*/
+
 
 #include <stdio.h>
 int main()
@@ -594,9 +617,11 @@ int main()
 
     return 0;
 }
+/*
 5
 *********
  *******
   *****
    ***
     *
+*/
